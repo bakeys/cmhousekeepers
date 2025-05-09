@@ -60,7 +60,7 @@ export default function HomePage() {
         {/* gradient overlay */}
         <span
           aria-hidden="true"
-          className="absolute inset-0 bg-teal-800/90 mix-blend-multiply backdrop-blur-[4px]"
+          className="absolute inset-0 bg-teal-800/90 mix-blend-multiply"
         />
 
         <div className="relative z-10 w-full max-w-3xl px-6 text-center space-y-6">
