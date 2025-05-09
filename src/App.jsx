@@ -54,7 +54,7 @@ export default function HomePage() {
       <header
         id="top"
         className="relative min-h-screen flex items-center justify-center
-                   bg-[url('clean-living-room.jpg')]
+                   bg-[url('/clean-living-room.jpg')]
                    bg-cover bg-center text-white"
       >
         {/* gradient overlay */}
@@ -102,7 +102,7 @@ export default function HomePage() {
       <section className="bg-white py-20">
         <div className="container mx-auto px-6 grid gap-10 md:grid-cols-2 md:items-center">
           <img
-            src="cleaner.png"
+            src="/cleaner.png"
             alt="Cleaner wiping a countertop"
             className="w-full rounded-lg shadow-lg object-cover h-80"
           />
