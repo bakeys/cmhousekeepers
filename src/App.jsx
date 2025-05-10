@@ -57,11 +57,6 @@ export default function HomePage() {
                    bg-[url('/clean-living-room.png')]
                    bg-cover bg-center text-white"
       >
-        {/* gradient overlay */}
-        <span
-          aria-hidden="true"
-          className="absolute inset-0 bg-teal-800 mix-blend-overlay"
-        />
 
         <div className="relative z-10 w-full max-w-3xl px-6 text-center space-y-6">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
