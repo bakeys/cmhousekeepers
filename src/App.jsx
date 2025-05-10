@@ -54,13 +54,13 @@ export default function HomePage() {
       <header
         id="top"
         className="relative min-h-screen flex items-center justify-center
-                   bg-[url('/clean-living-room.jpg')]
+                   bg-[url('/clean-living-room.png')]
                    bg-cover bg-center text-white"
       >
         {/* gradient overlay */}
         <span
           aria-hidden="true"
-          className="absolute inset-0 bg-teal-600/90 mix-blend-multiply"
+          className="absolute inset-0 mix-blend-multiply"
         />
 
         <div className="relative z-10 w-full max-w-3xl px-6 text-center space-y-6">
