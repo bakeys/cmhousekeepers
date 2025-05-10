@@ -27,7 +27,7 @@ export default function QuoteForm() {
   };
 
   return (
-    <div className="min-h-screen bg-teal-800 flex flex-col items-center text-xs">
+    <div className="min-h-screen bg-teal-800 flex flex-col items-center text-m">
       {/* Top Navigation */}
       <nav className="w-full bg-white shadow-sm text-sm">
         <div className="max-w-8xl mx-auto px-6 py-2 flex items-center justify-between">
