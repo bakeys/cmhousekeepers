@@ -30,7 +30,7 @@ export default function QuoteForm() {
     <div className="min-h-screen bg-teal-800 flex flex-col items-center text-xs">
       {/* Top Navigation */}
       <nav className="w-full bg-white shadow-sm text-sm">
-        <div className="max-w-8xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-8xl mx-auto px-6 py-2 flex items-center justify-between">
           <img src="/logo.png" alt="CM Housekeepers Logo" className="h-8" />
           <Link
             to="/"
@@ -64,19 +64,22 @@ export default function QuoteForm() {
             <div className="mb-4">
               <label className="block font-medium">Rooms</label>
               {rooms.map((room, index) => (
-                <div key={index} className="flex flex-col sm:flex-row gap-2 mt-1 items-stretch">
+                <div
+                  key={index}
+                  className="flex flex-row gap-1 mt-1 items-stretch"
+                >
                   <input
                     type="text"
                     placeholder="Room name"
                     value={room.type}
                     onChange={(e) => handleRoomChange(index, 'type', e.target.value)}
-                    className="mt-1 w-full border rounded p-2"
+                    className="flex-1 border rounded p-2"
                     required
                   />
                   <select
                     value={room.size}
                     onChange={(e) => handleRoomChange(index, 'size', e.target.value)}
-                    className="mt-1 border rounded p-2"
+                    className="flex border rounded p-2"
                     required
                   >
                     <option value="">Size</option>
@@ -88,7 +91,7 @@ export default function QuoteForm() {
                     <button
                       type="button"
                       onClick={() => removeRoom(index)}
-                      className="p-2 bg-gray-100 border border-gray-300 rounded hover:bg-gray-200 cursor-pointer"
+                      className="px-2 flex items-center justify-center bg-gray-100 border border-gray-300 rounded hover:bg-gray-200 cursor-pointer"
                       aria-label="Remove room"
                     >
                       <Trash2 className="w-4 h-4 text-black" />
@@ -99,7 +102,7 @@ export default function QuoteForm() {
               <button
                 type="button"
                 onClick={addRoom}
-                className="mt-2 text-teal-600 hover:underline cursor-pointer"
+                className="mt-1 text-teal-600 hover:underline cursor-pointer"
               >
                 + Add Room
               </button>
@@ -110,13 +113,20 @@ export default function QuoteForm() {
               <div className="grid grid-cols-2 gap-2 mt-1">
                 {['Standard cleaning', 'Deep cleaning', 'Disinfection', 'Window cleaning'].map((service) => (
                   <label key={service} className="flex items-center">
-                    <input type="checkbox" className="mr-2" value={service} name="services" required /> {service}
+                    <input
+                      type="checkbox"
+                      className="mr-2"
+                      value={service}
+                      name="services"
+                      required
+                    />
+                    {service}
                   </label>
                 ))}
               </div>
             </div>
 
-            <div className="mb-4">
+            <div className="mb-4 mt-1">
               <label className="block font-medium">Preferred Date</label>
               <input type="date" className="mt-1 w-full border rounded p-2" required />
             </div>
@@ -129,7 +139,7 @@ export default function QuoteForm() {
             </button>
           </form>
 
-          <section className="mt-10 text-slate-700">
+          <section className="mt-5 text-slate-700">
             <h2 className="text-sm font-semibold text-teal-800 mb-4">What to Expect</h2>
             <ul className="list-disc pl-6 space-y-2">
               <li>We'll review your request and contact you via email within 24 hours.</li>
@@ -138,7 +148,7 @@ export default function QuoteForm() {
             </ul>
           </section>
 
-          <div className="mt-10 text-center text-slate-500">
+          <div className="mt-5 text-center text-slate-500">
             Trusted by households across Essex • Fully insured • 100% satisfaction guarantee
           </div>
         </div>
